@@ -5,6 +5,7 @@ import Board from "./Board";
 import Button from '@mui/material/Button'
 
 
+
 function App() {
     const picture = ['🐠' , '🎪', '🎃', '🛴', '🌹', '🍒']
 
@@ -71,7 +72,10 @@ function App() {
     }
 
     return (
+
         <div>
+
+
             <h1>Memory game</h1>
             <Board field={field} openCard={openCard}/>
 
@@ -79,6 +83,7 @@ function App() {
                 <h3>{`Congratulations you win in ${movesAmount} moves!`}</h3>
                 <Button variant="contained" onClick={restart}>Restart</Button>
             </div>}
+
         </div>
     );
 }
